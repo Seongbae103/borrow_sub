@@ -1,0 +1,1 @@
+export {default as Notice} from "web/notice/components/Notice"

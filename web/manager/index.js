@@ -1,0 +1,7 @@
+export {default as MangerMain} from "web/manager/components/MangerMain"
+export {default as MngBox} from "web/manager/components/MngBox"
+export {default as MngClaim} from "web/manager/components/MngClaim"
+export {default as MngDamage} from "web/manager/components/MngDamage"
+export {default as MngDemand} from "web/manager/components/MngDemand"
+export {default as MngLogIn} from "web/manager/components/MngLogIn"
+export {default as ManagerPages} from "web/manager/container/ManagerPages"
