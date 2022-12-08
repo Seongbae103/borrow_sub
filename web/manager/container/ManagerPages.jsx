@@ -1,25 +1,25 @@
-import { Route, Routes, Link } from "react-router-dom"
-import {MngNotice, MngClaim, MngBox, MngDamage, MngDemand} from "web/manager"
+import { Route, Routes } from "react-router-dom"
+import {MngMenu, MngClaim, MngBox, MngDamage, MngDemand, MngNotice} from "web/manager"
+import "web/manager/style/Manager.css"
+import MngUserInfo from "../components/MngUserInfo"
 
 const ManagerPages = ()=>{
     return(<>
-    <div>관리자명</div>
-    <div>
-        <button><Link to ="#">공지사항 작성</Link></button><br/>
-        <button><Link to ="/mn/userinfo">유저 정보</Link></button><br/>
-        <button><Link to ="/mn/claim">상담 내역</Link></button><br/>
-        <button><Link to ="/mn/box">보관함 조회</Link></button><br/>
-        <button><Link to ="/mn/damage">파손기록</Link></button><br/>
-        <button><Link to ="/mn/demand">수요예측</Link></button><br/>
-    </div>
-    <div>
+    <table>
+    <thead>관리자명</thead>
+    <tbody><MngMenu/></tbody>
+    </table>
+    <body className="bgc">
         <Routes>
-            <Route path="/mn/claim" element={<MngClaim/>}></Route>
-            <Route path="/mn/box" element={<MngBox/>}></Route>
-            <Route path="/mn/damage" element={<MngDamage/>}></Route>
-            <Route path="/mn/demand" element={<MngDemand/>}></Route>
+            <Route path="/mn" element={<ManagerPages/>}></Route>
+            <Route path="*/mngclaim" element={<MngClaim/>}></Route>
+            <Route path="*/mngbox" element={<MngBox/>}></Route>
+            <Route path="*/mngdamage" element={<MngDamage/>}></Route>
+            <Route path="*/mnguserinfo" element={<MngUserInfo/>}></Route>
+            <Route path="*/mngdemand" element={<MngDemand/>}></Route>
+            <Route path="*/mngnotice" element={<MngNotice/>}></Route>
         </Routes>
-    </div>
+    </body>
     </>)
 }
 

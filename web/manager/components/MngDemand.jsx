@@ -1,11 +1,39 @@
-import map from "web/manager/img/map.PNG"
-const MngDemand = ()=>{
+const MngDemand=()=>{
     return(<>
-        <table>
-            <td><img src={map}/></td>
-            <td>번호</td>
-            <td>주소</td>
-        </table>
+    <h3>수요 예측</h3>
+    <table class="table">
+        <thead>
+            <td>
+                <th scope="col">구분</th>
+                <th scope="col">주소</th>
+                <th scope="col">수요 증감</th>
+
+            </td>
+        </thead>
+        <tbody className="bgc">
+            <tr>
+                <td>
+                    <th>??</th>
+                    <th>??</th>
+                    <th>??</th>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <th>??</th>
+                    <th>??</th>
+                    <th>??</th>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <th>??</th>
+                    <th>??</th>
+                    <th>??</th>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     </>)
 }
 export default MngDemand

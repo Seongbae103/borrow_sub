@@ -19,7 +19,7 @@ const Nav=()=>{
                     <Link to ="/notice" className="nav-link">공지사항</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to ="/mn" className="nav-link">관리자</Link>
+                    <Link to ="/mn/*" className="nav-link">관리자</Link>
                 </li>
             </ul>
             </div>
